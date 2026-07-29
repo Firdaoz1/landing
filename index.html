@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product landing page</title>
+  <style>
+#main{
+  margin-top: 55px;
+  margin-bottom: 10px;
+}
+
+#header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+
+@media(max-width:600px){
+  #header{
+    background-color:red
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header id="header">
+  <img src="/" id="header-img">
+  <nav id="nav-bar">
+    <a href="#header" class="nav-link">header</a>
+    <a href="#video" class="nav-link">main</a>
+    <a href="#form" class="nav-link">footer</a>
+  </nav>
+</header>
+<main>
+  <section id="main">
+    <video src="/" loop controls id="video">
+  </section>
+  <section id="footer">
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <input type="submit" id="submit" required>
+      </form>  
+      </section>
+</main>
+</body>
+</html>
